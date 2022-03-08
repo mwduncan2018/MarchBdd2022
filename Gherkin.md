@@ -1,10 +1,6 @@
 # Gherkin Best Practices
 
-##### Benefits of avoiding Gherkin anti-patterns
-###### Improve maintenance and avoid maintenance nightmares
-###### Improve reusability
-###### Improve readability
-###### Increase collaboration
+###### Reduce Maintenance + Improve Readability + Improve Reusability + Increase Collaboration
 
 ## Good Advice
 ##### You should not need to spend a lot of time reading and understanding a scenario.
