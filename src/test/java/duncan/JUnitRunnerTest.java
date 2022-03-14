@@ -9,8 +9,11 @@ import io.cucumber.junit.CucumberOptions;
 // JUnit RunWith
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@CustomTypeDemo", // Execute tagged features and scenarios
-		glue = { "duncan.steps", "duncan.hooks", "duncan.customtypes" }, // Look for step definitions and hooks in these packages
+		tags = "@DataTable", // Execute tagged features and scenarios
+		glue = { "duncan.steps", // Look for step definitions and hooks in these packages
+				"duncan.hooks",
+				"duncan.customdatatypes",
+				"duncan.customparametertypes" },
 		features = "src/test/resources/features", // Look for features in this folder
 		plugin = { "pretty", "html:target/cucumber.html", "json:target/cucumber.json" }, // Write location for the JSON and HTML report
 		snippets = CucumberOptions.SnippetType.CAMELCASE, // Generate snippets in camcelcase or with underscores
@@ -28,7 +31,7 @@ public class JUnitRunnerTest {
 	// JUnit AfterClass
 	@AfterClass
 	public static void afterClass() {
-		System.out.println("=========== JUNII afterClass ===========");
+		System.out.println("=========== JUNIT afterClass ===========");
 	}
 
 }
