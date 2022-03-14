@@ -1,13 +1,13 @@
-## Cucumber Expressions
+# Cucumber Expressions
 
-#### Cucumber Expressions are an alternative to Regular Expressions.
-#### Cucumber Expressions are easier to read and understand, so use them!
-#### Supported Types:
+# Cucumber Expressions are an alternative to Regular Expressions.
+# Cucumber Expressions are easier to read and understand, so use them!
+## Supported Types:
 ##### {int} -> 5
 ##### {float} -> 1.5
 ##### {word} -> wordWithoutSpace
 ##### {string} -> "with space" or 'single quotes' or "double quotes" or '' (empty text) or "" (empty text)
-#### Optional Text
+## Optional Text
 '''
 Given I have 1 dollar
 When I have 2 dollars
@@ -17,7 +17,7 @@ Then I have 3 dollars
 @Then("I have {int} dollar(s)")
 public void iHaveDollars(int cash) { ... }
 '''
-#### Alternative Text
+## Alternative Text
 '''
 Given I jump to the moon
 Then I hop to the moon
@@ -26,5 +26,5 @@ Then I hop to the moon
 @When("I jump/hop to the moon")
 public void iJumpHopToTheMoon() { ... }
 '''
-#### Custom Parameter Type
+## Custom Parameter Type
 ##### Put custom parameter types in a package and specify the package within the glue.
