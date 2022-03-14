@@ -1,14 +1,12 @@
 package duncan.domainobjects;
 
-public class Guitar {
+public class Car {
 	private String manufacturer;
 	private String model;
-	private Double price;
-	public Guitar(String manufacturer, String model, Double price) {
+	public Car(String manufacturer, String model) {
 		super();
 		this.manufacturer = manufacturer;
 		this.model = model;
-		this.price = price;
 	}
 	public String getManufacturer() {
 		return manufacturer;
@@ -21,11 +19,5 @@ public class Guitar {
 	}
 	public void setModel(String model) {
 		this.model = model;
-	}
-	public Double getPrice() {
-		return price;
-	}
-	public void setPrice(Double price) {
-		this.price = price;
-	}
+	}	
 }
