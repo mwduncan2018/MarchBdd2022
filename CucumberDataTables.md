@@ -45,7 +45,9 @@ public void stepDef(@Transpose List<Map<String, String>> collection) { }
 
 ## Custom Conversions
 ###### Cucumber only allows a single custom conversion for a class to be defined.
-###### For example, Cucumber will allow a conversion to either List<MyCustomDomainModel> or MyCustomDomainModel, but not both.
+```
+For example, Cucumber will allow a conversion to either List<MyCustomDomainModel> or MyCustomDomainModel, but not both.
+```
 ```
 	// This method defines how to do the custom conversion to MyCustomDomainModel.
 	@DataTableType
@@ -60,6 +62,8 @@ public void stepDef(@Transpose List<Map<String, String>> collection) { }
 		...
 	}
 ```
+## DataTable Methods
+###### The most important methods are values(), cells(), and entries().
 ```
 	// dataTable.values()
 	// Use when there is a single row/column.
