@@ -1,7 +1,6 @@
-# Cucumber Expressions
-
-# Cucumber Expressions are an alternative to Regular Expressions.
-# Cucumber Expressions are easier to read and understand, so use them!
+## Cucumber Expressions
+###### Cucumber Expressions are an alternative to Regular Expressions.
+###### Cucumber Expressions are easier to read and understand, so use them!
 ## Supported Types:
 ##### {int} -> 5
 ##### {float} -> 1.5
