@@ -35,6 +35,10 @@ public class DataTableCustomTypeSteps {
 	 * @Transpose
 	 * Use to flip the x and y values of the data table.
 	 * 
+	 * @DataTableType
+	 * Use to define the custom conversion.
+	 * In a real project, put these in their own package.
+	 * 
 	 * Examples are below.
 	 */
 	
