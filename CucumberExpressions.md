@@ -27,3 +27,6 @@ public void iJumpHopToTheMoon() { ... }
 ```
 ## Custom Parameter Type
 ##### Put custom parameter types in a package and specify the package within the glue.
+```
+@CucumberOptions(glue = { "my.package.for.customparametertypes" })
+```
