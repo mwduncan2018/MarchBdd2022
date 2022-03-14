@@ -3,6 +3,7 @@ package duncan.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
+import duncan.domainobjects.Foobar;
 import duncan.domainobjects.Guitar;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.But;
@@ -24,8 +25,7 @@ public class SampleSteps {
 		System.out.println("... inside theResultIsGood()");
 	}
 	
-	@Given("a {guitar} exists")
-	public void aGuitarExists(Guitar guitar) {
-		System.out.println("GUITAR..." + guitar.getModel());
+	@Given("a {foobar} exists")
+	public void aFoobarExists(Foobar foobar) {
 	}
 }
