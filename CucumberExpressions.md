@@ -1,6 +1,6 @@
 ## Cucumber Expressions
 ###### Cucumber Expressions are an alternative to Regular Expressions.
-###### Cucumber Expressions are easier to read and understand, so use them!
+###### Cucumber Expressions do not work when passing scenario outline example data to the step definition. In that case, use regular expressions.
 ## Supported Types:
 ##### {int} -> 5
 ##### {float} -> 1.5
@@ -29,4 +29,17 @@ public void iJumpHopToTheMoon() { ... }
 ##### Put custom parameter types in a package and specify the package within the glue.
 ```
 @CucumberOptions(glue = { "my.package.for.customparametertypes" })
+```
+## Regular Expression
+###### Pass data from a scenario outline example to a step definition.
+```
+Scenario Outline: Print names
+  Given I print <firstName> and <lastName>
+  Examples:
+  | firstName | lastName |
+  | bob       | davis    |
+  | jeremy    | johnson  |
+
+@Given("^I print (.*) and (.*)$")
+public void stepDef(String firstName, String lastName) { ... }
 ```
