@@ -1,6 +1,7 @@
 @DataTable
 Feature: Data table
 
+  @PrintScenarioInformation
   Scenario: Single cell, to string
     Given single cell, to string
     | test |
