@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
-// JUnit RunWith
+// JUnit RunWithc
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@DataTable", // Execute tagged features and scenarios
+		tags = "@Tags and @SuperStage and @SuperRule", // Execute tagged features and scenarios
 		glue = { "duncan.steps", // Look for step definitions and hooks in these packages
 				"duncan.hooks",
 				"duncan.customdatatypes",
