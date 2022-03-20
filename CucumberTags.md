@@ -1,6 +1,6 @@
 ## Cucumber Tags
 ###### Use tags to run a subset of scenarios, features, rules, and examples.
-###### Use tags to restrict hooks to a subset of scenarios.
+###### Use tags to run hooks for a subset of scenarios.
 ###### Maven overrides tags in the JUnitCucumberRunner.
 
 ```
@@ -11,6 +11,10 @@ Feature: Tags
   Rule: Cucumber has tags
     Given I print pie
 
+  @MegaScenario
+  Scenario: Print hello
+    Given I print hello
+  
   @SuperScenario
   Scenario Outline: Print names
     Given I print <firstName> and <lastName>
@@ -26,4 +30,15 @@ Feature: Tags
     | firstname | lastname |
     | travis    | duncan   |
     | bill      | duncan   |
- ```
+```
+
+```
+// Execute things tagged with either @MegaScenario or @SuperScenario
+@CucumberOptions(tags = "@MegaScenario or @SuperScenario")
+
+// Execute things tagged with both @SuperScenario and @Tags
+@CucumberOptions(tags = "@SuperScenario and @Tags")
+
+// Execute things tagged with @Tags, but not tagged with @SuperProd
+@CucumberOptions(tags = "@Tags and not @SuperProd")
+```
